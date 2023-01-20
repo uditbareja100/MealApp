@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family:'Montserrat Alternates', sans-serif ;
+    padding: 0;
+   
+    height: 100vh;
+    width: 100wh;
+    overflow: scroll;
+
+}
+.search-result{
+    width: 80vw;
+    height: 92vh;
+    background-color: white;
+    overflow: scroll;
+
+}
+/* .fa-heart {
+  margin-left: 12px;
+  margin-top: 6px;
+  padding-top: 2px;
+ background-color: black;
+} */
+
+.fav-meals{
+    width: 26vw;
+    height: 92vh;
+    overflow: scroll;
+    display: inline-block;
+   
+}
+.pop-up-container {
+    position: fixed;
+    inset: 0;
+    background-color: var(--primary-rgba-7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* as default it'll be hidden */
+    display: none;
+}
+.pop-up {
+    width: clamp(200px, 92vw, 900px);
+    max-height: 90vh;
+    box-shadow: 0 0 .5rem var(--secondary-rgba-3);
+    background-color: beige;
+    color: var(--secondary-clr);
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+.pop-up-inner {
+    display: flex;
+    gap: 2rem;
+}
+.pop-up i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: auto;
+    background-color: transparent;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.pop-up .left i {
+    display: none;
+}
+.right {
+    overflow-y: scroll;
+    max-height: 85vh;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+}
+.right div {
+    margin-bottom: 2rem;
+}
+.right ul li {
+    padding-right: 2rem;
+    list-style-position: inside;
+}
+.right .meal-info,
+.right ul {
+    margin-top: 0.5rem;
+}
